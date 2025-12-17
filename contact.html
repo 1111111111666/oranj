@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/main.css" rel="stylesheet" />
     <title>Оранж - Контакты</title>
-    <style>
-       
-    </style>
 </head>
 <body>
-  <!-- Хедер -->
+    <!-- Хедер -->
     <header class="header-top">
         <div class="promo-banner">
             <div class="container">
-                <span class="promo-text">🚚 Бесплатная доставка от 3000₽ | ⚡ Доставка за 2 часа</span>
+                <span class="promo-text">🚛 Бесплатная доставка от 3000₽ | 🗲  Доставка за 2 часа</span>
             </div>
         </div>
         
@@ -29,7 +26,7 @@
                         <li><a href="about.html" class="nav-link">О нас</a></li>
                         <li><a href="hits.html" class="nav-link">Хиты</a></li>
                         <li><a href="catalog.html" class="nav-link">Каталог</a></li>
-                        <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                        <li><a href="contact.html" class="nav-link active">Контакты</a></li>
                     </ul>
                 </nav>
                 
@@ -51,193 +48,264 @@
         </div>
     </header>
 
-   <!-- Основной контент страницы контактов -->
-<section class="contacts-page container">
-    <header class="contacts-header">
-        <div class="contacts-header-content">
-            <h1 class="contacts-title">Контакты</h1>
-            <div class="contacts-header-image"></div>
+    <!-- Основной контент страницы контактов -->
+    <main class="container">
+        <!-- Заголовок -->
+        <div class="contacts-header">
+            <div class="page-header">
+                <h1 class="page-title">Контакты</h1>
+                <div class="title-decoration"></div>
+            </div>
+            <p class="page-subtitle">Свяжитесь с нами любым удобным способом. Мы всегда рады помочь вам с выбором цветов.</p>
         </div>
-        <p class="contacts-subtitle">Свяжитесь с нами любым удобным способом. Мы всегда рады помочь вам с выбором цветов и ответить на все ваши вопросы.</p>
-    </header>
-    
-    <!-- Розничная продажа -->
-    <div class="sales-section">
+
+        <!-- Розничная продажа -->
+        <section class="contacts-section">
             <h2 class="section-title">Розничная продажа</h2>
             <div class="contacts-grid">
+                <!-- Центральный магазин -->
                 <div class="contact-card">
-                    <div class="contact-image" style="background-image: url('../images/v32_59.png');"></div>
+                    <div class="contact-image">
+                    </div>
                     <div class="contact-info">
                         <h3 class="contact-name">Центральный магазин</h3>
                         <div class="contact-details">
-                            <div class="contact-icon">
-                                <i>📍</i> Спортивная, Ленина ул. д. 5-7
+                            <div class="contact-detail">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">Спортивная, Ленина ул. д. 5-7</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📞</i> (999) 999 00 00
+                            <div class="contact-detail">
+                                <span class="contact-icon">☎</span>
+                                <span class="contact-text">(999) 999 00 00</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📱</i> (999) 999 99 99
+                            
+                            <div class="contact-detail">
+                                <span class="contact-icon">🕒</span>
+                                <span class="contact-text">Ежедневно 9:00-21:00</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>🕒</i> Ежедневно с 9:00 до 21:00
-                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="tel:+79999990000" class="contact-btn call-btn">
+                                <span class="btn-icon">☎</span>
+                                <span>Позвонить</span>
+                            </a>
+                            <button class="contact-btn map-btn" data-location="central">
+                                <span class="btn-icon">🗺️</span>
+                                <span>На карте</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Северный магазин -->
                 <div class="contact-card">
-                    <div class="contact-image" style="background-image: url('../images/v39_343.png');"></div>
+                    <div class="contact-image">
+                    </div>
                     <div class="contact-info">
                         <h3 class="contact-name">Северный магазин</h3>
                         <div class="contact-details">
-                            <div class="contact-icon">
-                                <i>📍</i> Спортивная, Ленина ул. д. 5-7
+                            <div class="contact-detail">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">Спортивная, Ленина ул. д. 5-7</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📞</i> (999) 999 00 00
+                            <div class="contact-detail">
+                                <span class="contact-icon">☎</span>
+                                <span class="contact-text">(999) 999 00 00</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📱</i> (999) 999 99 99
+                            
+                            <div class="contact-detail">
+                                <span class="contact-icon">🕒</span>
+                                <span class="contact-text">Ежедневно 9:00-22:00</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>🕒</i> Ежедневно с 9:00 до 21:00
-                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="tel:+79999990000" class="contact-btn call-btn">
+                                <span class="btn-icon">☎</span>
+                                <span>Позвонить</span>
+                            </a>
+                            <button class="contact-btn map-btn" data-location="north">
+                                <span class="btn-icon">🗺️</span>
+                                <span>На карте</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
         <!-- Оптовая продажа -->
-        <div class="sales-section">
+        <section class="contacts-section">
             <h2 class="section-title">Оптовая продажа</h2>
             <div class="contacts-grid">
+                <!-- Центральный оптовый склад -->
                 <div class="contact-card">
-                    <div class="contact-image" style="background-image: url('../images/v36_116.png');"></div>
+                    <div class="contact-image">
+                    </div>
                     <div class="contact-info">
                         <h3 class="contact-name">Центральный оптовый склад</h3>
                         <div class="contact-details">
-                            <div class="contact-icon">
-                                <i>📍</i> Спортивная, Ленина ул. д. 5-7
+                            <div class="contact-detail">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">Спортивная, Ленина ул. д. 5-7</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📞</i> (999) 999 00 00
+                            <div class="contact-detail">
+                                <span class="contact-icon">☎</span>
+                                <span class="contact-text">(999) 999 00 00</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📱</i> (999) 999 99 99
+                            
+                            <div class="contact-detail">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">opt@oranje-flowers.ru</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>✉️</i> opt@oranje-flowers.ru
-                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="tel:+79999990000" class="contact-btn call-btn">
+                                <span class="btn-icon">☎</span>
+                                <span>Позвонить</span>
+                            </a>
+                            <button class="contact-btn map-btn" data-location="opt-central">
+                                <span class="btn-icon">🗺️</span>
+                                <span>На карте</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Северный оптовый склад -->
                 <div class="contact-card">
-                    <div class="contact-image" style="background-image: url('../images/v36_124.png');"></div>
+                    <div class="contact-image">
+                    </div>
                     <div class="contact-info">
                         <h3 class="contact-name">Северный оптовый склад</h3>
                         <div class="contact-details">
-                            <div class="contact-icon">
-                                <i>📍</i> Спортивная, Ленина ул. д. 5-7
+                            <div class="contact-detail">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">Спортивная, Ленина ул. д. 5-7</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📞</i> (999) 999 00 00
+                            <div class="contact-detail">
+                                <span class="contact-icon">☎</span>
+                                <span class="contact-text">(999) 999 00 00</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📱</i> (999) 999 99 99
+                           
+                            <div class="contact-detail">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">opt-north@oranje-flowers.ru</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>✉️</i> opt-north@oranje-flowers.ru
-                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="tel:+79999990000" class="contact-btn call-btn">
+                                <span class="btn-icon">☎</span>
+                                <span>Позвонить</span>
+                            </a>
+                            <button class="contact-btn map-btn" data-location="opt-north">
+                                <span class="btn-icon">🗺️</span>
+                                <span>На карте</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 
+                <!-- Южный оптовый склад -->
                 <div class="contact-card">
-                    <div class="contact-image" style="background-image: url('../images/v36_132.png');"></div>
+                    <div class="contact-image">
+                    </div>
                     <div class="contact-info">
                         <h3 class="contact-name">Южный оптовый склад</h3>
                         <div class="contact-details">
-                            <div class="contact-icon">
-                                <i>📍</i> Спортивная, Ленина ул. д. 5-7
+                            <div class="contact-detail">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">Спортивная, Ленина ул. д. 5-7</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📞</i> (999) 999 00 00
+                            <div class="contact-detail">
+                                <span class="contact-icon">☎</span>
+                                <span class="contact-text">(999) 999 00 00</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>📱</i> (999) 999 99 99
+                            
+                            <div class="contact-detail">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">opt-south@oranje-flowers.ru</span>
                             </div>
-                            <div class="contact-icon">
-                                <i>✉️</i> opt-south@oranje-flowers.ru
-                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="tel:+79999990000" class="contact-btn call-btn">
+                                <span class="btn-icon">☎</span>
+                                <span>Позвонить</span>
+                            </a>
+                            <button class="contact-btn map-btn" data-location="opt-south">
+                                <span class="btn-icon">🗺️</span>
+                                <span>На карте</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        
-<!-- Карта -->
-<div class="map-section">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123918!2d30.320894615972458!3d59.93871648187615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sus!4v1647699369477!5m2!1sen!2sus&maptype=roadmap&zoom=14&controls=0&ui=false" 
-        width="100%" 
-        height="100%" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"
-        title="Карта магазинов Оранж в Санкт-Петербурге">
-    </iframe>
-    
-    <div class="map-overlay">
-        <div class="map-message">
-            <h3>Наши магазины</h3>
-            <p>Найдите ближайший к вам магазин "Оранж" на карте Санкт-Петербурга</p>
-        </div>
-    </div>
-        
+        <!-- Карта -->
+        <section class="map-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123918!2d30.320894615972458!3d59.93871648187615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg!5e0!3m2!1sen!2sru!4v1647699369477!5m2!1sen!2sru" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                title="Карта магазинов Оранж в Санкт-Петербурге">
+            </iframe>
+            
+            <div class="map-overlay">
+                <div class="map-message">
+                    <h3>Наши магазины</h3>
+                    <p>Найдите ближайший к вам магазин "Оранж" на карте Санкт-Петербурга</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Форма обратной связи -->
-        <div class="contact-form-section">
-            <h2 class="form-title">Остались вопросы?</h2>
+        <section class="contact-form-section">
+            <div class="form-header">
+                <h2 class="form-title">Остались вопросы?</h2>
+                <p class="form-subtitle">Заполните форму и мы свяжемся с вами в течение часа</p>
+            </div>
+            
             <form class="contact-form">
                 <div class="form-row">
                     <div class="form-group">
                         <label class="form-label">Имя *</label>
-                        <input type="text" class="form-input" required>
+                        <input type="text" class="form-input" placeholder="Ваше имя" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label">Телефон *</label>
-                        <input type="tel" class="form-input" required>
+                        <input type="tel" class="form-input" placeholder="+7 (999) 999-99-99" required>
                     </div>
                 </div>
                 
                 <div class="form-group">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-input">
+                    <input type="email" class="form-input" placeholder="email@example.com">
                 </div>
                 
                 <div class="form-group">
                     <label class="form-label">Тема *</label>
-                    <select class="form-input" required>
+                    <select class="form-select" required>
                         <option value="">Выберите тему</option>
                         <option value="retail">Розничная покупка</option>
                         <option value="wholesale">Оптовая покупка</option>
                         <option value="cooperation">Сотрудничество</option>
+                        <option value="delivery">Доставка</option>
                         <option value="other">Другое</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
                     <label class="form-label">Сообщение *</label>
-                    <textarea class="form-textarea" required></textarea>
+                    <textarea class="form-textarea" placeholder="Ваш вопрос или сообщение..." rows="4" required></textarea>
                 </div>
                 
                 <button type="submit" class="submit-btn">Отправить сообщение</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Футер -->
     <footer class="footer">
@@ -262,7 +330,7 @@
                     </div>
                 </div>
                 
-             <div class="footer-social">
+<div class="footer-social">
                     <div class="action-icons">
                         <a href="#" class="icon-btn"><i class="cart-icon"></i></a>
                         <a href="#" class="icon-btn"><i class="favorite-icon"></i></a>
@@ -272,9 +340,11 @@
             </div>
             
             <div class="footer-bottom">
-                <p class="copyright">© 2024 Оранж. Все права защищены.</p>
+                <p class="copyright">© 2025 Оранж. Все права защищены.</p>
             </div>
         </div>
     </footer>
+    
+    <script src="js/contacts.js"></script>
 </body>
 </html>

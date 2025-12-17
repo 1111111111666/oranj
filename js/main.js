@@ -1,4 +1,4 @@
-// Карусель популярных разделов - простой вариант
+// ЭТО ДЖС ДЛЯ КАРУСЕЛИ ГЛАВНОЙ СТР БУКЕТРНЫЕ ХИТЫ
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.carousel-track');
     const slides = document.querySelectorAll('.carousel-slide');
@@ -64,25 +64,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Автопрокрутка
-    let autoplay = setInterval(nextSlide, 5000);
+    let autoplay = setInterval(nextSlide, 3000);
     
-    // Остановка автопрокрутки при наведении
-    const carouselContainer = document.querySelector('.carousel-container');
-    if (carouselContainer) {
-        carouselContainer.addEventListener('mouseenter', () => {
-            clearInterval(autoplay);
-        });
-        
-        carouselContainer.addEventListener('mouseleave', () => {
-            autoplay = setInterval(nextSlide, 5000);
-        });
-    }
     
     // Адаптация при ресайзе
     window.addEventListener('resize', updateVisibleSlides);
     
     // Инициализация
     updateVisibleSlides();
-    
-    // Остальной код...
+
 });
+
