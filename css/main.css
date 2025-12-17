@@ -23,8 +23,8 @@ body {
 .header-top {
     position: sticky;
     top: 0;
-    background: linear-gradient(135deg, rgba(200, 55, 112, 0.1) 0%, rgba(162, 183, 113, 0.15) 100%);
-    backdrop-filter: blur(5px);
+    background: linear-gradient(135deg, rgba(240, 201, 217, 0.9) 0%, rgba(162, 183, 113, 0.15) 100%);
+    backdrop-filter: blur(20px);
     box-shadow: 0 2px 20px rgba(200, 55, 112, 0.1);
     z-index: 1000;
     border-bottom: 1px solid rgba(200, 55, 112, 0.1);
@@ -1887,6 +1887,7 @@ body {
         font-size: 13px;
     }
 }
+
 
 @media (max-width: 480px) {
     .catalog-controls {
