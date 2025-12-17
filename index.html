@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Оранж - Цветочный магазин</title>
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="header-top">
+        <div class="promo-banner">
+            <div class="container">
+                <span class="promo-text">🚚 Бесплатная доставка от 3000₽ | ⚡ Доставка за 2 часа</span>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container header-container">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon"></div>
+                </a>
+                
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="about.html" class="nav-link">О нас</a></li>
+                        <li><a href="hits.html" class="nav-link">Хиты</a></li>
+                        <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                        <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Поиск товаров...">
+                            <div class="search-icon"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><i class="cart-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="favorite-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="user-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content container">
+        <!-- Карусель популярных разделов -->
+        <section class="popular-sections">
+            <div class="section-header">
+                <h2 class="page-title">Популярные разделы</h2>
+                <p class="page-subtitle">Выбирайте из самых востребованных букетов</p>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev">‹</button>
+                <button class="carousel-btn next">›</button>
+                
+                <div class="carousel-track">
+                    <div class="carousel-slide slide-birthday">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Букет на день рождения</h3>
+                            <p class="slide-description">Яркие праздничные композиции</p>
+                            <button class="slide-button" onclick="window.location.href='hits.html#birthday'">Выбрать</button>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide slide-wedding">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Букет на свадьбу</h3>
+                            <p class="slide-description">Элегантные и романтичные цветы</p>
+                            <button class="slide-button" onclick="window.location.href='hits.html#wedding'">Выбрать</button>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide slide-newyear">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Букет на новый год</h3>
+                            <p class="slide-description">Волшебные праздничные композиции</p>
+                            <button class="slide-button" onclick="window.location.href='hits.html#newyear'">Выбрать</button>
+                        </div>
+                    </div>
+                     <div class="carousel-slide slide-date">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Букет на свидание</h3>
+                            <p class="slide-description">Милые и романтичные цветы</p>
+                            <button class="slide-button" onclick="window.location.href='hits.html#date'">Выбрать</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="carousel-nav">
+                    <div class="carousel-dot active" data-slide="0"></div>
+                    <div class="carousel-dot" data-slide="1"></div>
+                    <div class="carousel-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Букетные хиты с фильтрами -->
+        <section class="products-section">
+            <div class="section-header">
+                <h2 class="page-title">Букетные хиты</h2>
+                <p class="PAGE-subtitle">Популярные букеты наших клиентов</p>
+            </div>
+            
+            <div class="products-container">
+                <!-- Фильтры -->
+                <aside class="filters">
+                    <div class="filter-group">
+                        <h3 class="filter-title">Цена</h3>
+                        <div class="price-range">
+                            <div class="price-input-wrapper">
+                                <label class="price-label">От</label>
+                                <input type="number" class="price-input" placeholder="0" min="0">
+                            </div>
+                            <div class="price-input-wrapper">
+                                <label class="price-label">До</label>
+                                <input type="number" class="price-input" placeholder="9999" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3 class="filter-title">Цветы</h3>
+                        <div class="checkbox-list">
+                            <label class="checkbox-item">
+                                <input type="checkbox" checked>
+                                <span class="custom-checkbox"></span>
+                                <span>Розы</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span>Гвоздики</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span>Тюльпаны</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span>Пионы</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3 class="filter-title">Цвета</h3>
+                        <div class="color-filters">
+                            <label class="color-checkbox-item" style="--color: #c83770">
+                                <input type="checkbox">
+                                <span class="color-box"></span>
+                            </label>
+                            <label class="color-checkbox-item" style="--color: #45b352">
+                                <input type="checkbox">
+                                <span class="color-box"></span>
+                            </label>
+                            <label class="color-checkbox-item" style="--color: #ffffff">
+                                <input type="checkbox">
+                                <span class="color-box"></span>
+                            </label>
+                            <label class="color-checkbox-item" style="--color: #e83232">
+                                <input type="checkbox">
+                                <span class="color-box"></span>
+                            </label>
+                            <label class="color-checkbox-item" style="--color: #ffd700">
+                                <input type="checkbox">
+                                <span class="color-box"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="apply-filters-btn">Применить фильтры</button>
+                </aside>
+                
+                <!-- Товары -->
+                <div class="products-grid">
+                    <!-- Пример товара 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge">Хит</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Зимний букет "Juilet"</h3>
+                            <div class="product-price">4 999 ₽</div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                            <button class="order-btn">В корзину</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Пример товара 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge">Новинка</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Весенний букет "Aurora"</h3>
+                            <div class="product-price">3 599 ₽</div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-value">4.8</span>
+                            </div>
+                            <button class="order-btn">В корзину</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Пример товара 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge sale">-15%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Романтичный букет "Amor"</h3>
+                            <div class="product-price">
+                                <span class="current-price">3 299 ₽</span>
+                                <span class="old-price">3 799 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <button class="order-btn">В корзину</button>
+                        </div>
+                    </div>
+                                        <!-- Пример товара 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge sale">-15%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Романтичный букет "Amor"</h3>
+                            <div class="product-price">
+                                <span class="current-price">3 299 ₽</span>
+                                <span class="old-price">3 799 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <button class="order-btn">В корзину</button>
+                        </div>
+                    </div>
+                                        <!-- Пример товара 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge sale">-15%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Романтичный букет "Amor"</h3>
+                            <div class="product-price">
+                                <span class="current-price">3 299 ₽</span>
+                                <span class="old-price">3 799 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <button class="order-btn">В корзину</button>
+                        </div>
+                    </div>
+                                        <!-- Пример товара 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge sale">-15%</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Романтичный букет "Amor"</h3>
+                            <div class="product-price">
+                                <span class="current-price">3 299 ₽</span>
+                                <span class="old-price">3 799 ₽</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <button class="order-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <div class="logo-icon"></div>
+                </a>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <a href="about.html" class="footer-link">О нас</a>
+                        <a href="hits.html" class="footer-link">Хиты</a>
+                        <a href="catalog.html" class="footer-link">Каталог</a>
+                        <a href="contact.html" class="footer-link">Контакты</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="footer-link">Доставка</a>
+                        <a href="#" class="footer-link">Оплата</a>
+                        <a href="#" class="footer-link">Возврат</a>
+                        <a href="#" class="footer-link">Конфиденциальность</a>
+                    </div>
+                </div>
+                
+<div class="footer-social">
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><i class="cart-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="favorite-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="user-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Оранж. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

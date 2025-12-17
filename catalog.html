@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Оранж - Каталог</title>
+</head>
+<body>
+    <!-- Хедер -->
+    <header class="header-top">
+        <div class="promo-banner">
+            <div class="container">
+                <span class="promo-text">🚚 Бесплатная доставка от 3000₽ | ⚡ Доставка за 2 часа</span>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container header-container">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon"></div>
+                </a>
+                
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="about.html" class="nav-link">О нас</a></li>
+                        <li><a href="hits.html" class="nav-link">Хиты</a></li>
+                        <li><a href="catalog.html" class="nav-link active">Каталог</a></li>
+                        <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Поиск товаров...">
+                            <div class="search-icon"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><i class="cart-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="favorite-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="user-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент каталога -->
+    <main class="container">
+        <!-- Заголовок -->
+        <div class="catalog-header">
+            <div class="page-header">
+                <h1 class="page-title">Каталог</h1>
+                <div class="title-decoration"></div>
+            </div>
+            <p class="page-subtitle">Все цветы и букеты в одном месте</p>
+        </div>
+
+        <!-- Сортировка и фильтры -->
+        <div class="catalog-controls">
+            <div class="sorting">
+                <select class="sort-select">
+                    <option value="popular">По популярности</option>
+                    <option value="price-low">Сначала дешевле</option>
+                    <option value="price-high">Сначала дороже</option>
+                    <option value="new">Новинки</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="catalog-content">
+            <!-- Фильтры -->
+            <aside class="filters">
+                <div class="filter-group">
+                    <h3 class="filter-title">Цена</h3>
+                    <div class="price-range">
+                        <div class="price-input-wrapper">
+                            <label class="price-label">От</label>
+                            <input type="number" class="price-input" placeholder="0" min="0">
+                        </div>
+                        <div class="price-input-wrapper">
+                            <label class="price-label">До</label>
+                            <input type="number" class="price-input" placeholder="9999" min="0">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3 class="filter-title">Тип цветов</h3>
+                    <div class="checkbox-list">
+                        <label class="checkbox-item">
+                            <input type="checkbox" checked>
+                            <span class="custom-checkbox"></span>
+                            <span>Розы</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Тюльпаны</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Пионы</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Хризантемы</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3 class="filter-title">Цвет</h3>
+                    <div class="color-filters">
+                        <label class="color-checkbox-item" style="--color: #c83770">
+                            <input type="checkbox">
+                            <span class="color-box"></span>
+                        </label>
+                        <label class="color-checkbox-item" style="--color: #45b352">
+                            <input type="checkbox">
+                            <span class="color-box"></span>
+                        </label>
+                        <label class="color-checkbox-item" style="--color: #ffffff">
+                            <input type="checkbox">
+                            <span class="color-box"></span>
+                        </label>
+                        <label class="color-checkbox-item" style="--color: #ffd700">
+                            <input type="checkbox">
+                            <span class="color-box"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3 class="filter-title">Повод</h3>
+                    <div class="checkbox-list">
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>День рождения</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Свадьба</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>8 Марта</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>14 февраля</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="apply-filters-btn">Применить фильтры</button>
+            </aside>
+            
+            <!-- Товары каталога -->
+            <div class="catalog-products">
+                <!-- Раздел: Свежесрезанные -->
+                <div class="catalog-section">
+                    <h2 class="section-title">Свежесрезанные цветы</h2>
+                    <div class="products-grid">
+                        <!-- Товар 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge">Хит</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Зимний букет "Juliet"</h3>
+                                <div class="product-price">4 999 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-value">5.0</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge sale">-15%</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Весеннее настроение</h3>
+                                <div class="product-price">
+                                    <span class="current-price">3 499 ₽</span>
+                                    <span class="old-price">3 999 ₽</span>
+                                </div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-value">4.8</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 3 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge">Новинка</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Летняя фантазия</h3>
+                                <div class="product-price">2 899 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-value">4.9</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 4 -->
+                        <div class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-title">Осенняя гармония</h3>
+                                <div class="product-price">3 999 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-value">5.0</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 5 -->
+                        <div class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-title">Романтический вечер</h3>
+                                <div class="product-price">4 599 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-value">4.7</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 6 -->
+                        <div class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-title">Классический шик</h3>
+                                <div class="product-price">5 299 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-value">5.0</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Раздел: Горшечные растения -->
+                <div class="catalog-section">
+                    <h2 class="section-title">Горшечные растения</h2>
+                    <div class="products-grid">
+                        <!-- Товар 7 -->
+                        <div class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-title">Орхидея Фаленопсис</h3>
+                                <div class="product-price">2 999 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-value">4.9</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 8 -->
+                        <div class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-title">Фикус Бенджамина</h3>
+                                <div class="product-price">1 999 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-value">4.6</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 9 -->
+                        <div class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-title">Суккуленты микс</h3>
+                                <div class="product-price">1 499 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-value">4.8</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Товар 10 -->
+                        <div class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-title">Спатифиллум</h3>
+                                <div class="product-price">2 499 ₽</div>
+                                <div class="product-rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="rating-value">4.7</span>
+                                </div>
+                                <button class="order-btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </main>
+<!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <div class="logo-icon"></div>
+                </a>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <a href="about.html" class="footer-link">О нас</a>
+                        <a href="hits.html" class="footer-link">Хиты</a>
+                        <a href="catalog.html" class="footer-link">Каталог</a>
+                        <a href="contact.html" class="footer-link">Контакты</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="footer-link">Доставка</a>
+                        <a href="#" class="footer-link">Оплата</a>
+                        <a href="#" class="footer-link">Возврат</a>
+                        <a href="#" class="footer-link">Конфиденциальность</a>
+                    </div>
+                </div>
+                
+<div class="footer-social">
+                    <div class="action-icons">
+                        <a href="#" class="icon-btn"><i class="cart-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="favorite-icon"></i></a>
+                        <a href="#" class="icon-btn"><i class="user-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Оранж. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
