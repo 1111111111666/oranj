@@ -1303,11 +1303,11 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255);
     padding: 15px 20px;
     border-radius: 8px;
     width: 350px;
-    height: 120px;
+    height: 140px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #c83770;
 }
@@ -1493,8 +1493,8 @@ body {
     }
     
     .map-overlay {
-        top: 15px;
-        left: 15px;
+        top: 0px;
+        left: 0px;
         padding: 12px 15px;
         max-width: 240px;
     }
@@ -1530,15 +1530,15 @@ body {
     }
     
     .map-section {
-        height: 200px;
+        height: 300px;
     }
     
     .map-overlay {
-        position: relative;
-        top: auto;
-        left: auto;
-        max-width: 100%;
-        margin: 15px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        max-width: 320px;
+        height: 80px;
         background: white;
     }
     

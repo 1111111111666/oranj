@@ -1,5 +1,4 @@
 
-// В main.js, hits.js и других файлах:
 document.querySelectorAll('.order-btn, .carousel-order-btn').forEach(btn => {
     btn.addEventListener('click', function(e) {
         e.preventDefault();
