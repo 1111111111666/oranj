@@ -64,25 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
             autoplay = setInterval(nextSlide, 4000);
         });
         
-        // Кнопки "Заказать"
-        const orderBtns = container.querySelectorAll('.carousel-order-btn');
-        orderBtns.forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const productTitle = this.closest('.carousel-item').querySelector('.carousel-title').textContent;
-                const productPrice = this.closest('.carousel-item').querySelector('.new-price').textContent;
-                
-                this.textContent = 'Добавлено ✓';
-                this.style.background = '#45b352';
-                
-                setTimeout(() => {
-                    this.textContent = 'Заказать';
-                    this.style.background = '';
-                }, 2000);
-                
-                console.log(`Товар "${productTitle}" (${productPrice}) добавлен в корзину`);
-            });
-        });
         
         // Адаптация при ресайзе
         window.addEventListener('resize', updateVisibleItems);
